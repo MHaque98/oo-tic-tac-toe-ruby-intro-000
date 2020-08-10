@@ -104,4 +104,16 @@ def over?
   end
 end
 
+def winner
+  win_combo = won?
+  if won?
+    token = win_combo[0]
+    if @board[token] == 'X'
+      return "X"
+    else
+      return "O"
+    end
+  end
+end
+
 end
