@@ -55,7 +55,7 @@ def turn
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(index)
-    turn = current_player(board)
+    turn = current_player
     move(index, turn)
   else
     puts "Please try again"
