@@ -93,13 +93,13 @@ def full?
 end
 
 def draw?
- if (!won? && full?)
+ if !won? && full?
    return true
  end
 end
 
 def over?
-  if (won? || full? || draw?
+  if won? || full? || draw?
     return true
   end
 end
