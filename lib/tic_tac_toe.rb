@@ -52,7 +52,6 @@ end
 
 def turn
   puts "Please enter 1-9:"
-  display_board
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(index)
@@ -62,7 +61,7 @@ def turn
     puts "Please try again"
     turn
   end
-
+    display_board
 end
 
 end
