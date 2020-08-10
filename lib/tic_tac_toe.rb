@@ -60,8 +60,9 @@ def turn
   else
     puts "Please try again"
     turn
-  end
     display_board
+  end
+
 end
 
 end
