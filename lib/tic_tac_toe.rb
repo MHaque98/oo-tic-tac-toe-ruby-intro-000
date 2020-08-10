@@ -127,5 +127,6 @@ def play
   else
     puts "Cat's Game!"
   end
-  end
+end
+
 end
