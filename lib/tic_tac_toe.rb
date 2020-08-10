@@ -29,4 +29,8 @@ end
 def move(position, value)
   @board[position] = value
 end
+
+def position_taken?(index)
+  !(@board[index].nil? || @board[index] == " ")
+end
 end
