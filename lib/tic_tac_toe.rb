@@ -59,8 +59,9 @@ def turn
     move(index, turn)
   else
     puts "Please try again"
-    turn
+
   end
+  turn
     display_board
 end
 
