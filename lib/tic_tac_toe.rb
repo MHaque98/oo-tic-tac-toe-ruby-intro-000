@@ -55,13 +55,12 @@ def turn
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(index)
-    turn = current_player
-    move(index, turn)
+    token = current_player
+    move(index, token)
   else
     puts "Please try again"
-
+    turn
   end
-  turn
     display_board
 end
 
