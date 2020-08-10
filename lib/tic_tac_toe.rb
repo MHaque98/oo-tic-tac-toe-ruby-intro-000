@@ -50,18 +50,18 @@ def current_player
   turn_count.even? ? "X" : "O"
 end
 
-def turn(board)
+def turn
   puts "Please enter 1-9:"
   input = gets.strip
   index = input_to_index(input)
-  if valid_move?(board, index)
-    turn = current_player(board)
-    move(board, index, turn)
+  if valid_move?(index)
+    turn = current_player
+    move(index, turn)
   else
     puts "Please try again"
-    turn(board)
+    turn
   end
-    display_board(board)
+    display_board
 end
 
 end
